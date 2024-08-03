@@ -1,0 +1,23 @@
+nav{    
+    background-color: rgb(78, 206, 27);
+    
+}
+
+.nav-list{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(2, auto);
+    justify-content:space-between;
+    align-items: center;    
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+span{
+    padding: 0 20px;
+    margin: 0 20px;
+    
+    
+}
+
