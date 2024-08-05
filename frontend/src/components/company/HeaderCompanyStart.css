@@ -1,0 +1,41 @@
+.header-company-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);       
+    
+}
+
+.header-company-slogan{
+    grid-column: 1/3;
+    grid-row: 1/2;    
+    text-align: center;
+    align-self: center;
+}
+
+.header-company-img-container{
+    grid-column:3/4;
+    grid-row: 1/2; 
+}
+
+.header-company-button-container{
+    grid-column: 2/3;
+    grid-row:2/3; 
+}
+
+.header-company-start-img{
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+button{
+    padding: 2%;
+    border-radius: 15pt;
+    background-color: rgb(78, 206, 27);
+    transition: transform 0.2ms ease-in-out;
+}
+
+button:hover{
+    transform:scale(1.07);
+}

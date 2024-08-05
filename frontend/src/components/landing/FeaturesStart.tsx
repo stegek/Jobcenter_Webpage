@@ -14,7 +14,7 @@ const FeaturesStart: React.FC = () => {
       </div>
       <div>
         <img src="check.png" alt="check" className="feature-icon" />
-        <p>Jobs bequem auf der persönlichen Checkliste vormerken.</p>
+        <p>Ausschreibungen bequem auf der persönlichen Checkliste vormerken.</p>
       </div>
       <div>
         <img src="budget.png" alt="budget" className="feature-icon" />

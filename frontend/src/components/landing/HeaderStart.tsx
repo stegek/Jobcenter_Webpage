@@ -1,7 +1,28 @@
 import React from "react";
 import "./HeaderStart.css";
 
-const HeaderStart: React.FC = () => {
+interface headerProps {
+  term: string;
+  setTerm: (input: string) => void;
+  region: string;
+  setRegion: (rInput: string) => void;
+}
+
+const HeaderStart: React.FC<headerProps> = (props) => {
+  const handleSearchInput = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    const inputterm = event.currentTarget.value;
+    props.setTerm(inputterm);
+  };
+
+  const handleRegionInput = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    const regionInput = event.currentTarget.value;
+    props.setRegion(regionInput);
+  };
+
   return (
     <div className="header-container">
       <div className="header-img">
@@ -20,11 +41,15 @@ const HeaderStart: React.FC = () => {
           type="text"
           placeholder="Welcher Job darfs denn sein ..."
           className="search-input-left"
+          value={props.term}
+          onChange={handleSearchInput}
         />
         <input
           type="text"
           placeholder="Bundesland/Bezirk eingeben..."
           className="search-input-right"
+          value={props.region}
+          onChange={handleRegionInput}
         />
       </div>
     </div>
