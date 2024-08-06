@@ -1,0 +1,27 @@
+.features-company-start-container{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    justify-content: center;  
+
+
+}
+
+.icon-container{
+
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.p-container{
+    padding-bottom: 4rem;
+}
+
+.austria-black-img{
+    width:18%
+}
+
+
+

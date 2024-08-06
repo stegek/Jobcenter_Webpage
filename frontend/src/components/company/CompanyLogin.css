@@ -1,0 +1,50 @@
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  3rem 1fr auto;    
+    margin: 4rem 0 17rem 0;
+}
+
+.formparent{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 2/3;  
+    justify-content: center;     
+    padding: 1rem 0;
+    margin:0;
+    border-radius: 15pt;    
+
+}
+
+.register-link{
+    grid-column: 2/3;
+    grid-row:3/4;    
+    
+}
+
+.input-text{
+    padding:1rem;
+    margin: 1rem auto;
+    width: 70%;
+    border-radius: 15pt;
+}
+
+.input-button{
+    width: 30%;
+    margin:1rem auto;
+    padding:0.5rem;
+    border-radius: 5pt;
+    background-color: rgb(78, 206, 27);
+    transition: transform 0.2ms ease-in-out
+
+}
+
+.input-button:hover{
+    transform:scale(1.07);
+}
+
+.input-text:focus{
+    border: 2.5pt solid black;
+}

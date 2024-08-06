@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "./components/landing/LandingPage";
 import UserLogin from "./components/UserLogin";
 import CompanyLanding from "./components/company/CompanyLanding";
-import JobresultPage from "./components/JobresultPage";
+import JobresultPage from "./components/jobresult/JobresultPage";
 import CompanyLogin from "./components/company/CompanyLogin";
 
 const AppRoutes: React.FC = () => {

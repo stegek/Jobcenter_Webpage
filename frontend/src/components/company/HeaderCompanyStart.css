@@ -1,8 +1,7 @@
 .header-company-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);       
-    
+    grid-template-rows: repeat(2,auto);      
 }
 
 .header-company-slogan{
@@ -20,6 +19,7 @@
 .header-company-button-container{
     grid-column: 2/3;
     grid-row:2/3; 
+    margin-bottom:5rem;    
 }
 
 .header-company-start-img{
@@ -38,4 +38,12 @@ button{
 
 button:hover{
     transform:scale(1.07);
+}
+
+.company-slogan{
+    width: 105%;   
+}
+
+.company-subslogan{
+    width:80%;
 }

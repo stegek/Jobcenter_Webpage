@@ -5,8 +5,16 @@ const HeaderCompanyStart: React.FC = () => {
   return (
     <div className="header-company-container">
       <div className="header-company-slogan">
-        <h1>Mit Chinjob zum Traumkandidaten</h1>
-        <p>Schalten Sie jetzt beim Testsieger des Magazin Chintech</p>
+        <img
+          className="company-slogan"
+          src="companyStartHeaderSlogan.png"
+          alt="Slogan"
+        />
+        <img
+          className="company-subslogan"
+          src="companyStartHeaderSubslogan.png"
+          alt="Subslogan"
+        />
       </div>
       <div className="header-company-img-container">
         <img
