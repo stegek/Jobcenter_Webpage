@@ -5,10 +5,13 @@ import UserLogin from "./components/UserLogin";
 import CompanyLanding from "./components/company/CompanyLanding";
 import JobresultPage from "./components/jobresult/JobresultPage";
 import CompanyLogin from "./components/company/CompanyLogin";
+import AdPriceList from "./components/company/AdPriceList";
+import Warenkorb from "./components/company/Warenkorb";
 
 const AppRoutes: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [searchRegion, setSearchRegion] = useState<string>("");
+  const [choice, setChoice] = useState<string>("");
 
   return (
     <Routes>
@@ -27,6 +30,11 @@ const AppRoutes: React.FC = () => {
       <Route path="/user-log" element={<UserLogin />} />
       <Route path="/company" element={<CompanyLanding />} />
       <Route path="/company-login" element={<CompanyLogin />} />
+      <Route
+        path="/ad-prices"
+        element={<AdPriceList setChoice={setChoice} />}
+      />
+      <Route path="/warenkorb" element={<Warenkorb choice={choice} />} />
     </Routes>
   );
 };

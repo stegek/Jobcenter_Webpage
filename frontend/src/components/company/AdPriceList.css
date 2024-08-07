@@ -1,0 +1,54 @@
+.company-adprice-container{
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1rem auto 1rem;
+    padding: 4rem 0;    
+}
+
+.basic{
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.advanced{
+    grid-column:3/4;
+    grid-row:2/3;
+}
+
+.professional{
+    grid-column:4/5;
+    grid-row:2/3;
+}
+
+h1, h3{
+    text-align: left;
+    margin-left:2rem;
+}
+
+.price-item{
+    margin:4rem 1rem;
+    border:1pt solid black;
+    border-radius: 15pt;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,.5);
+}
+
+li{
+    margin: 1rem 0;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul{
+    height: 10rem;
+}
+
+button{
+    width: 60%;
+    margin: 4rem auto 3rem auto;
+}

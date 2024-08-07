@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeaderCompanyStart.css";
+import { Link } from "react-router-dom";
 
 const HeaderCompanyStart: React.FC = () => {
   return (
@@ -24,7 +25,9 @@ const HeaderCompanyStart: React.FC = () => {
         />
       </div>
       <div className="header-company-button-container">
-        <button>Stellenanzeige aufgeben</button>
+        <Link to="/ad-prices">
+          <button>Stellenanzeige aufgeben</button>
+        </Link>
       </div>
     </div>
   );
