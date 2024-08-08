@@ -7,6 +7,7 @@ import JobresultPage from "./components/jobresult/JobresultPage";
 import CompanyLogin from "./components/company/CompanyLogin";
 import AdPriceList from "./components/company/AdPriceList";
 import Warenkorb from "./components/company/Warenkorb";
+import CompanyRegister from "./components/company/CompanyRegister";
 
 const AppRoutes: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -30,6 +31,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/user-log" element={<UserLogin />} />
       <Route path="/company" element={<CompanyLanding />} />
       <Route path="/company-login" element={<CompanyLogin />} />
+      <Route path="/company-register" element={<CompanyRegister />} />
       <Route
         path="/ad-prices"
         element={<AdPriceList setChoice={setChoice} />}
